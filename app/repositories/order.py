@@ -44,8 +44,6 @@ class OrderRepository:
     ) -> Order:
 
         order.status = status
-
         self.session.flush()
-
         return order
     

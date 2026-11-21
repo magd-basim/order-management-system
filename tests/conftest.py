@@ -14,10 +14,6 @@ from app.core.config import settings
 from app import models
 
 
-# --------------------------------
-# 1. Test Database Configuration
-# --------------------------------
-
 TEST_DATABASE_URL = settings.TEST_DATABASE_URL
 
 if not TEST_DATABASE_URL:
@@ -33,19 +29,11 @@ if database_name != "order_management_test":
     )
 
 
-# --------------------------------
-# 2. Test Engine
-# --------------------------------
-
 test_engine = create_engine(
     TEST_DATABASE_URL,
     pool_pre_ping=True,
 )
 
-
-# --------------------------------
-# 3. Test Session Factory
-# --------------------------------
 
 TestingSessionLocal = sessionmaker(
     bind=test_engine,
@@ -53,11 +41,6 @@ TestingSessionLocal = sessionmaker(
     autocommit=False,
     expire_on_commit=False,
 )
-
-
-# --------------------------------
-# 4. Database Setup
-# --------------------------------
 
 @pytest.fixture(scope="session", autouse=True)
 def setup_database():
@@ -72,10 +55,6 @@ def setup_database():
 
     test_engine.dispose()
 
-
-# --------------------------------
-# 5. Database Session Fixture
-# --------------------------------
 
 @pytest.fixture
 def db_session():
@@ -97,26 +76,6 @@ def db_session():
         transaction.rollback()
         connection.close()
 
-
-# --------------------------------
-# 6. Test Client Fixture
-# --------------------------------
-"""
-@pytest.fixture
-def client(db_session):
-
-    def override_get_db():
-        yield db_session
-
-    app.dependency_overrides[get_db] = override_get_db
-
-    try:
-        with TestClient(app) as test_client:
-            yield test_client
-
-    finally:
-        app.dependency_overrides.clear()
-"""
 
 @pytest.fixture
 def client(db_session):
