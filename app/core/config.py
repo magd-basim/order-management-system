@@ -17,6 +17,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str
     DEBUG: bool = True
     TEST_DATABASE_URL: str | None = None
+    MIGRATION_DATABASE_URL: str| None = None
 
     @model_validator(mode="after")
     def validate_production_settings(self):
