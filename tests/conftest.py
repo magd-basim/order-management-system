@@ -11,7 +11,7 @@ from app.database.base import Base
 from app.api.v1.dependencies import get_db
 from app.core.config import settings
 
-from app import models
+from main import models
 
 
 TEST_DATABASE_URL = settings.TEST_DATABASE_URL
