@@ -31,9 +31,9 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://fc2f40fb.order-management-system-coh.pages.dev",
         "https://order-management-system-coh.pages.dev",
     ],
+    allow_origin_regex=r"^https://([a-z0-9-]+\.)?order-management-system-coh\.pages\.dev$",
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
