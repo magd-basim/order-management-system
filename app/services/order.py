@@ -125,9 +125,7 @@ class OrderService:
                     f"Cannot confirm order with status: {order.status}"
                 )
 
-            order_items = self.order_item_repository.get_by_order_id(
-                order.id
-            )
+            order_items = self.order_item_repository.get_by_order_id(order.id)
 
             product_ids = sorted({ item.product_id for item in order_items})
 

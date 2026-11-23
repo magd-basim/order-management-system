@@ -15,9 +15,7 @@ def get_db():
     finally:
         db.close()
         
-def get_product_service(
-    db: Session = Depends(get_db)
-) -> ProductService:
+def get_product_service(db: Session = Depends(get_db)) -> ProductService:
 
     return ProductService(db)
 
