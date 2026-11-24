@@ -1476,27 +1476,34 @@ function Orders() {
                   <div className="order-detail-items">
 
 
-                    {selectedOrder.items?.length ? (
+                    {selectedOrder.order_items?.length ? (
 
-                      selectedOrder.items.map((item) => (
+                      selectedOrder.order_items.map((item) => (
 
                         <div
                           className="order-detail-item"
                           key={item.id}
                         >
 
+<div className="order-detail-left">
 
-                          <div className="order-detail-product">
+                            <div className="order-detail-icon">
+                              <Package size={16} />
+                            </div>
 
-                            <strong>
-                              {getProductName(item.product_id)}
-                            </strong>
+                            <div className="order-detail-product">
 
-                            <span>
-                              {formatMoney(item.unit_price)}
-                              {" × "}
-                              {item.quantity}
-                            </span>
+                              <strong>
+                                {getProductName(item.product_id)}
+                              </strong>
+
+                              <span>
+                                {formatMoney(item.unit_price)}
+                                {" × "}
+                                {item.quantity}
+                              </span>
+
+                            </div>
 
                           </div>
 
