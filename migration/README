@@ -11,9 +11,8 @@ The project focuses on three essential business operations: **Product Management
 
 Explore the application through its deployed frontend, or access the backend directly.
 
-- **Frontend:** [Live Demo](YOUR_FRONTEND_URL)
-- **Backend API:** [API Base URL](YOUR_BACKEND_URL)
-- **API Documentation:** [Interactive API Docs](YOUR_API_DOCUMENTATION_URL)
+- **Frontend:** [Live Demo](order-management-system-coh.pages.dev)This link may not work properly on some mobile devices. For the best experience, please open it on a laptop or desktop computer.
+- **Backend API:** [API Base URL](https://order-management-system-7e751419.enzonic.dev/docs)
 
 ## Key Features
 
@@ -26,21 +25,15 @@ Explore the application through its deployed frontend, or access the backend dir
 ## Screenshots
 
 The following screenshots demonstrate the main application interfaces.
+### Dashboard![Dashboard](docs/screenshots/react1.png)
+### Product Management![Products](docs/screenshots/react2.png)
+### Order Management![Orders](docs/screenshots/orders.png)
+### Order Details![Order Details](docs/screenshots/order-details.png)
+### API Documentation![API Documentation](docs/screenshots/api1.png)
 
-### Dashboard
-![Dashboard](docs/screenshots/dashboard.png)
+### API 
+![API Documentan](docs/screenshots/api2.png)
 
-### Product Management
-![Products](docs/screenshots/products.png)
-
-### Order Management
-![Orders](docs/screenshots/orders.png)
-
-### Order Details
-![Order Details](docs/screenshots/order-details.png)
-
-### API Documentation
-![API Documentation](docs/screenshots/api-documentation.png)
 
 ## Technology Stack
 
@@ -134,7 +127,7 @@ The RESTful API is available under `/api/v1/`.
 | POST | `/orders/{order_id}/confirm` | Confirm an order |
 | POST | `/orders/{order_id}/cancel` | Cancel an order |
 
-For request formats, response examples, status codes, and interactive testing, refer to the [API Documentation](YOUR_API_DOCUMENTATION_URL).
+For request formats, response examples, status codes, and interactive testing, refer to the [API Documentation](https://order-management-system-7e751419.enzonic.dev/docs).
 
 ## Getting Started
 
