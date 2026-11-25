@@ -30,8 +30,7 @@ The following screenshots demonstrate the main application interfaces.
 ### Order Details
 ### API Documentation
 ### API 
-### on linkedin
-![linkedin](https://lnkd.in/p/ddUqNkNf)
+** on linkedin ** [linkedin](https://lnkd.in/p/ddUqNkNf)
 
 ## Technology Stack
 
