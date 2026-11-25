@@ -25,17 +25,13 @@ Explore the application through its deployed frontend, or access the backend dir
 ## Screenshots
 
 The following screenshots demonstrate the main application interfaces.
-
-### Dashboard
-![Dashboard](docs/screenshots/react1.png)
-### Product Management![Products](docs/screenshots/react2.png)
-### Order Management![Orders](docs/screenshots/orders.png)
-### Order Details![Order Details](docs/screenshots/order-details.png)
-### API Documentation![API Documentation](docs/screenshots/api1.png)
-
+### Product Management
+### Order Management
+### Order Details
+### API Documentation
 ### API 
-![API Documentan](docs/screenshots/api2.png)
-
+### on linkedin
+![linkedin](https://lnkd.in/p/ddUqNkNf)
 
 ## Technology Stack
 
