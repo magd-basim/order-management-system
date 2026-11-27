@@ -137,7 +137,7 @@ You need Python, PostgreSQL, and Git to run the backend locally. Node.js and npm
 Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone THE_REPOSITORY_URL
 cd order_management
 ```
 
